@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  height: 100vh;
+}
+
+.currency-converter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: min(100%, 400px);
+}
+
+/*  */
+.field-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+label {
+  color: rgb(64, 64, 64);
+}
+.input {
+  padding: 10px 7px;
+  font-size: 17px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+/*  */
+.result-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+.result-wrap button {
+  background-color: rgb(98, 9, 182);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  &:hover {
+    background-color: rgb(125, 11, 231);
+    cursor: pointer;
+  }
+}
+.result-wrap span {
+  color: rgb(98, 9, 182);
+  font-size: 17px;
+}
+
+/* drop down */
+.dropdown-container {
+  margin-block: 15px;
+  position: relative;
+}
+
+.flag-img {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 50px;
+}
+.favorite-btn {
+  position: absolute;
+  top: 35px;
+  right: 100px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 20px !important;
+}
+
+/*  */
+.swap-btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swap-btn-wrap button {
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 50%;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    background-color: #ccc;
+  }
+}
+
+.favorite {
+  background-color: black;
+  color: white;
+}
